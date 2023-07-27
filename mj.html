@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>umar farook</title>
+    
+    <link rel="shortcut icon" href="
+    " type="image/x-icon">
+    <script src="https://kit.fontawesome.com/4624881d63.js" crossorigin="anonymous"></script>
+
+    <style>
+        *{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+#head{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: aliceblue;
+    padding: 20px;
+    padding-right: 30px;
+  
+    
+}
+#head nav a {
+    position: relative;
+    margin-right: 30px;
+    padding: 10px;
+    top: 6px;
+ color: #fff;
+}
+#head nav a:hover{
+    color:blueviolet;
+  border: 12px;
+  border-bottom: 1px solid blueviolet;
+}
+#head nav{
+    right: 0px;
+    position: absolute;
+}
+.span{
+  
+    display: none;
+}
+.hide  {
+    display: none;
+    position: absolute;
+    left: -17px;
+   top: 50px;
+}
+.hide li{
+padding: 10px 16px;
+    text-align: center;
+    border-bottom: solid 1px #fff;
+    border-radius: 12px;
+    background-color: rgb(15, 13, 16);
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+}
+.skd:hover .hide {
+ display: block;
+  color: brown;
+}
+.hide li:hover{
+    background-color: #fff;
+    color: black;
+}
+#btn{
+    display: none;
+}
+#s2{
+    margin: 5%;
+    display: grid;
+    grid-template-columns: 36fr 1fr;
+  align-items: center;
+  justify-content: center;
+   grid-template-areas: 
+    "d d d d p"
+    "m m m m p"
+   ;
+}.d{
+   display: flex;
+   justify-content: center;
+   align-items: baseline;
+   transition-duration: 3s;
+   background: linear-gradient(rgba(103, 103, 228, 0.836),rgba(104, 50, 175, 0.459),pink);
+  margin-right: 10%;
+   border-radius: 12px ;
+   border-top-left-radius: 40px;
+   border-bottom-right-radius: 76px;
+
+}
+#s2 h2{
+  align-items: center;
+  justify-content: center;
+    grid-area: h;
+    width: fit-content;
+    padding: 50px;
+    margin: 10px;
+   font-size: 1.5em;
+   color: rgb(11, 5, 37);
+font-weight: 500px;
+transition-duration: 1s;
+text-shadow: #000, 2px;
+}
+ .d:hover h2{
+    color: rgba(41, 38, 29, 0.979); 
+    font-weight: 800;
+    background-color: rgba(228, 206, 206, 0.315);
+    border-radius: 50%;
+    
+}
+.im{
+    font-size: 2.5rem;
+    color: rgba(196, 152, 31, 0.712);
+}
+.btns{
+    grid-area: m;
+    display: flex;
+    margin: 20px;
+    margin-right: 120px;
+   justify-content:center;
+   padding: 0px;
+  
+   
+}
+.btns button{
+    padding: 20px;
+margin-top: 0px;
+border-radius: 12px;
+background-color: rgb(250, 128, 114);
+color: #fff;
+text-decoration: none;
+font-weight: 300px;
+border: none;
+transition-timing-function: ease-in;
+transition-duration: 0.3s;
+}
+
+.btns button:hover{
+    background-color: rgba(255, 99, 71, 0.432);
+    color: black;
+    
+}
+aside{
+    grid-area: p;
+    border-radius: 12px;
+}
+.skill {
+    display: grid;
+    align-items: center;
+    justify-content: center; 
+    position: relative;
+    top: 0vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "q1 q2"
+    "q3 q4";
+    
+}
+.skill  li{
+    text-align: center;
+    padding: 10%;
+    margin-left:15%;
+    margin-right: 15%    ;
+}.pc{
+    display: grid;
+    align-items: center;
+    justify-content: center; 
+    padding: 10%;
+    margin-left:10% ;
+    margin-right: 10%;
+    width: 80%;
+    height: 100%;
+   object-fit: fill;
+   transition-duration: 2s;
+}
+.pc:hover{
+    background-color: antiquewhite;
+    border-radius: 50%;
+}
+.pc img{
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+}
+.q2{
+    position: relative;
+    top: 6%;
+}
+.q4{
+    position: relative;
+    top: 2%;
+}.sp{
+    background:repeating-linear-gradient(to left,#fff 5px ,#000 20px);
+    display: grid;
+    align-items: center;
+    justify-content: space-around;
+   
+    animation-name: move;
+    animation-timing-function: ease-out;
+    animation-duration: 5s;
+animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+@keyframes move {
+    0%{
+        background-color: #fff;
+        width: 0%;
+        height: 1px;
+    }50%{
+        background:repeating-linear-gradient(to left,rgb(216, 24, 24) 5px ,rgb(119, 29, 29) 20px);
+        height: 3px;
+        width: 70%; 
+    }
+    100%{
+        background:repeating-linear-gradient(to left,rgb(216, 24, 24) 5px ,rgb(119, 29, 29) 20px);
+        height: 3px;
+        width: 100%;
+        background-color:1px, #000 ,solid;
+    }
+}
+#s4 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.educatn{
+
+}
+.experence{
+
+}
+#s4 h2{
+   text-align: center;
+    font-size: 2.5rem;
+    margin-top: 50px;
+}
+
+.edu{
+    padding: 30px;
+    margin: 50px;
+}
+.experence ul li{
+    list-style-type: disc;
+}.experence  div{
+    padding: 30px;
+    
+}
+@media screen and (max-width: 768px) {
+    .nav {
+        width: 100%;
+        height: 100%;
+background-color: darkgray;
+top: 11%;
+left: -100%;
+transition-duration: 2s;
+position: absolute;
+    }
+    .slide{
+        left: 0px;
+        transition-duration: 2s;
+    }
+    #nav  a{
+        display: block;
+        text-align: center;
+    }
+    .skd:hover {
+        position: static;
+    }
+    .skd:hover .hide {
+         position: relative;
+      width: 90%;
+            top: px;    
+            left: 10%;
+    }
+.span{
+float: right;
+ display: inline;
+ margin-top: 5px;
+ cursor: pointer;
+}
+.span span{
+
+    width: 30px;
+    height: 5px;
+    background-color: rgba(219, 182, 182, 0.829);
+    margin-bottom: 5px;
+    display: block;
+}
+aside{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ margin-right: 60px;
+  margin-top: 20px; 
+}
+#s2{
+    display: block;
+    float: right;
+}
+
+.btns{
+    margin-right: 70px;
+}
+.skill {
+    display: block;
+    
+}
+#s4{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.q2{
+    top: 0%;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <section id="head">
+        <h2 >Umar <span>
+            Farook
+        </span></h2>
+        <nav id="nav" class="nav ">
+            <a href="#home">Home</a>
+            <a href="projects">Projects
+            </a>
+            <a class="skd" href="skills">Skills
+                <ul class="hide">
+                    <li>
+                       JAVA core             
+                    </li>
+                    <li>
+                        HTML 5
+                    </li>
+                    <li>
+                        JAVASCRIPT ES6
+                    </li>
+                    <li>
+                      CSS 3
+                    </li>
+                </ul>
+                </a>
+            <a  class="skd" href="cntact-us/contactus.html">contact us
+                <ul class="hide">
+                    <li  >E-mail</li>
+                    <li  href="#">+971 588536483</li>
+            </ul>    
+            </a>
+        </nav>
+        <div class="span">
+            <span>
+            </span><span></span><span></span>
+        </div>
+ 
+    </section>
+    <section id="s2">
+        <div class="d">
+            <H2>
+                <span class="im">I'm </span> <span id="w">Umar Farook </span>
+                <br><span>&</span><br>
+                <span class="im" >I'm  a</span>
+                <br>   FULL STACK-DEVELOPER</H2>
+
+        </div>
+  
+       
+        
+           <aside>
+            <figure>
+                <img src="assiets/6546.jpg" alt="photo">
+                     
+            </figure>
+           
+        </aside>
+        <div class="btns">
+            <a href="cntact-us/contactus.html"><button>Hire me</button></a>
+         
+           </div>
+    </section>
+    <section class="s3">
+        <ul class="skill">
+        <li class="q1 1"> <div class="pc"><figure><img src="assiets/java.png" alt=""></figure>
+    </div><div class="sp" ></div><div class="score" id="java" dj="0">010</div> JAVA CORE</li>
+        <li class="q2 1"><div class="pc"><figure><img src="assiets/js.png" alt=""></figure>
+        </div><div class="sp"></div><div class="score">00</div>JAVASCRIPT</li>
+        <li class="q3 1" ><div class="pc"><figure><img src="assiets/html.png" alt=""></figure>
+        </div><div class="sp"></div><div class="score">00</div>>HTML-5</li>
+        <li class="q4 1"><div class="pc"><figure><img src="assiets/css.png" alt=""></figure>
+        </div><div class="sp"></div><div class="score">00</div>CSS-3</li>
+    </ul>
+    </section>
+    <section id="footer">
+     
+            <a href="#">
+                <i class="fa-brands fa-square-instagram">
+                     </i>
+                 
+            </a>
+            
+        
+            <a href="#">
+                <i class="fa-brands fa-facebook-f">
+                  
+                    
+                </i>
+              
+            </a>
+         
+            <a href="">
+            <i class="fa-brands fa-linkedin">
+              
+               </i>  
+        </a>
+      
+    </section>
+    <script src="scrpt/script.js"></script>
+    <section id="s4">
+      <div class="educatn">
+        <h2>Education-Details</h2>
+        <div class="edu"><span>B.tech (Mechanical Engineering)</span> <span>CGPA - 7.12</span>
+        <br><span>Bharathiyar colloge of Engineering & Technology </span>
+        <br><span>Pondicherry Universty</span><span>Karaikal</span></div>
+        <div class="edu">
+            <span>HSC</span> <span>Marks- 822</spAn>
+        <br><span>St mary's Higher Secondary School </span>
+        <br><span>Tamil Nadu State Board</span><span>Karaikal</span>
+        </div>
+        <div class="edu">
+            <span>SSLC</span> <span> Marks- 418</span>
+            <br><span>St mary's Higher Secondary School </span>
+            <br><span>Tamil Nadu State Board</span>
+            <span>Karaikal</span>
+        </div>
+      </div>
+      <div class="experence">
+        <div><h2>Work Experience</h2>
+            <span>Graduate Apprentice </span> <span>02/2020 to 02/2022</span>
+              <span>  Puducherry Power Corporation Limited —>  Karaikal. India</span> 
+                <ul>
+                    <li>Observed equipment in operation, system activities and control readouts on continuous basis.</li>
+                    <li>Completed minor preventative maintenance and mechanical repairs on equipment.</li>
+                    <li>Examined load, equipment and adjusted monitoring controls to maintain system integrity and peak operations.</l>
+                    <li>Aligned boiler pressure and steam system operations  with optimum levels.</li>
+                    <li>Conducted safety audits and plant quality issues.</li>
+                    <li>Inspected facilities for adherence to fire, hazard and safety guidelines .`</li>
+                    <li>Documented daily activities in internal system and submitted daily shift reports.</li>
+                    <li>Carried out day-to-day duties
+                         accurately and efficiently.</li>
+                </ul>
+                </span></div>
+                <div>
+                    <span>Tool Room Trainee, 07/2019 to 12/2019
+                        Sharda Motors industrial limited —> Chennai, India
+                        </span>
+                        <ul>
+                            <li>
+                                Quickly learned new skills and applied them to daily tasks, improving efficiency and productivity.
+                            </li>
+                            <li>Devoted special emphasis to punctuality and worked to maintain outstanding attendance record, 
+                                consistently arriving to work ready to start immediately.</li>
+                            <li>	Maintained and repaired facilities, equipment and tools to achieve operational readiness, safety and cleanliness.</li>
+                            <li>Measured parts using calipers to confirm adherence to quality standards on final inspection .</li>
+                            <li>Observed safety practices and procedures to maintain safe and clean working environment.</li>
+                            <li>Received and processed stock into inventory management system</li>
+                            <li>Created spreadsheets using Microsoft excel for daily, weekly and monthly reporting.</li>
+                        </ul>
+                </div>
+    </div>
+    </section>
+    <script language="javascript">
+        const handbuger=document.querySelector('.span');
+const nav=document.querySelector('.nav ');
+handbuger.addEventListener('click',()=>{
+nav.classList.toggle('slide');
+});
+
+
+let valdj=document.querySelector('java');
+let int =5000;
+valdj.forEach((valdjr)=> {
+    let s=0;
+    let en=parseInt(valdjr.getAttribute('dj'));
+    let dur=Math.floor(int/en);
+    let cd=setInterval( (function) =>{
+        s+=1;
+        valdjr.textContent=s});
+        if(s == en) {
+            clearInterval(cd);
+        }
+    },dur);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
