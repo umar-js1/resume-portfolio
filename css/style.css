@@ -412,10 +412,30 @@ aside{
 .skill li:nth-child(1){
     display: inline-block;
 }
+
 }
-
-
-
+#footer {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+background-color: black;
+padding: 20px;
+}
+#footer a{
+  padding: 20px;
+    
+    
+}
+.fa-brands{
+   background-color: #f1f1f1;
+   opacity: 1;
+   border-radius: 50%;
+   padding: 10px;
+   margin: 10px;
+}
+.fa-brands:hover{
+background-color: #d1a1a1;
+}
 
 
 
